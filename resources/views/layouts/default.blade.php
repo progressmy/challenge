@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@yield('title')</title>
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <style>
     body {
       font-size: 16px;
@@ -13,7 +14,8 @@
     }
 
     h1 {
-      font-size: 60px;
+      font-size: 30px;
+      text-align: center;
     }
 
 

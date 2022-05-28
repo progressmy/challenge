@@ -1,0 +1,108 @@
+.contact_form{
+  width:800px;
+}
+label{
+  display:inline-block;
+  text-align:left;
+  width:150px;
+}
+.badge{
+  color:red;
+}
+input[type="text1"]{
+width:250px;
+height:40px;
+border:solid 1px rgb(187, 181, 181);
+border-radius: 5px;
+margin-right:10px;
+
+}
+input[type="text2"] {
+  width: 250px;
+  height: 40px;
+  border: solid 1px rgb(187, 181, 181);
+border-radius: 5px;
+text-align: left;
+}
+
+.exam8,.exam9{
+  color:rgb(187, 181, 181);
+  display: inline-block;
+}
+.exam8{
+  margin-left: 170px;
+}
+.exam9 {
+  margin-left: 220px;
+}
+.gender{
+  margin-bottom:20px;
+}
+input[type="text3"]{
+  width: 520px;
+  height: 40px;
+  border: solid 1px rgb(187, 181, 181);
+  border-radius: 5px;
+  text-align:left;
+  margin-top:20px;
+}
+.exam2 {
+  color: rgb(187, 181, 181);
+  display: inline-block;
+  margin-left: 170px;
+}
+input[type="text4"] {
+  width: 490px;
+  height: 40px;
+  border: solid 1px rgb(187, 181, 181);
+  border-radius: 5px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left:15px;
+}
+.exam3 {
+  color: rgb(187, 181, 181);
+  display: inline-block;
+  margin-left: 200px;
+}
+input[type="text5"] {
+  width: 520px;
+  height: 40px;
+  border: solid 1px rgb(187, 181, 181);
+  border-radius: 5px;
+  text-align: left;
+  margin-top: 20px;
+}
+.exam4 {
+  color: rgb(187, 181, 181);
+  display: inline-block;
+  margin-left: 170px;
+}
+input[type="text6"] {
+  width: 520px;
+  height: 40px;
+  border: solid 1px rgb(187, 181, 181);
+  border-radius: 5px;
+  text-align: left;
+  margin-top: 20px;
+}
+.exam5 {
+  color: rgb(187, 181, 181);
+  display: inline-block;
+  margin-left: 170px;
+}
+
+textarea{
+  vertical-align: top;
+  border: solid 1px rgb(187, 181, 181);
+  border-radius: 5px;
+}
+.button{
+  display:block;
+  border-radius: 5px;
+  background-color: black;
+  color:white;
+  margin:20px auto;
+  height:30px;
+  width:80px;
+}
