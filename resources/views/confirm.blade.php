@@ -7,10 +7,10 @@
 @section('title','内容確認')
 
 @section('content')
-<form action='/confirm' method="post">
+<form action="/" method="post">
   @csrf
-  <label>お名前</label>
-  <p><?php echo $_POST["family-name"]; ?></p>
+  <label for="full-name">お名前</label>
+  <p><?php echo $_POST["family-name"] . $_POST["given-name"]; ?></p>
   <br>
 
   <label for="gender">性別</label>
@@ -40,8 +40,9 @@
 
   <br>
   <input type="submit" value="送信">
-  <br>
-  <a href="/">修正する</a>
+    <br>
+
+    <a href="/">修正する</a>
 </form>
 
 

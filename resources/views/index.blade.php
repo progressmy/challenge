@@ -3,8 +3,17 @@
 @section('title', 'お問い合わせ')
 
 @section('content')
+<p>{{$txt}}</p>
+@if (count($errors) > 0)
+<ul>
+  @foreach ($errors->all() as $error)
+  <li>{{$error}}</li>
+  @endforeach
+</ul>
+@endif
 <form action="/" method="post">
   @csrf
+
   <div class="contact_form">
     <label for="name1">お名前<span class="badge bg-danger">※</span></label>
     <input type="text1" name="family-name" autocomplete="family-name" />
@@ -24,7 +33,7 @@
     <p class="exam2">例) test@example.com</p>
     <br>
     <label for="postcode">郵便番号<span class="badge bg-danger">※</span></label>
-    〒<input type="text4" name="postcode" pattern="\d{3}-?\d{4}">
+    〒<input type="text4" name="postcode" pattern="\d{3}[-]\d{4}">
     <br>
     <p class="exam3">例）123-4567</p>
     <br>
@@ -39,7 +48,7 @@
     <p class="exam5">例）千駄ヶ谷マンション101</p>
     <br>
     <label for="opinion">ご意見<span class="badge bg-danger">※</span></label>
-    <textarea name="textarea" cols="71" rows="5">ここに記入してください</textarea>
+    <textarea name="textarea" cols="71" rows="5" maxlength="120">ここに記入してください</textarea>
     <br>
     <input type="submit" value="確認" class="button">
   </div>
