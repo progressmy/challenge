@@ -15,6 +15,6 @@ use App\Http\Controllers\ChallengeController;
 */
 
 Route::get('/', [ChallengeController::class, 'index']);
-Route::post('/', [ChallengeController::class, 'post']);
+
 Route::post('/confirm', [ChallengeController::class, 'confirm']);
 Route::post('/thanks', [ChallengeController::class, 'thanks']);

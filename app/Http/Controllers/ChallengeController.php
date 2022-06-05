@@ -12,10 +12,7 @@ class ChallengeController extends Controller
     {
         return view('index',['txt'=>'フォームを入力']);
 }
-    public function post(ClientRequest $request)
-    {
-        return view('index', ['txt' => '正しい入力です']);
-    }
+    
 
         public function confirm(Request $request)
     {
